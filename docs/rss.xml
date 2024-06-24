@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>小小的博客</title><link>https://Air-ban.github.io</link><description>一个喜欢各种新鲜事物的学习知识的人</description><copyright>小小的博客</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://raw.githubusercontent.com/Air-ban/Air-ban.github.io/main/pages.jpg</url><title>avatar</title><link>https://Air-ban.github.io</link></image><lastBuildDate>Mon, 24 Jun 2024 17:50:31 +0000</lastBuildDate><managingEditor>小小的博客</managingEditor><ttl>60</ttl><webMaster>小小的博客</webMaster><item><title>被勒索经历</title><link>https://Air-ban.github.io/post/bei-le-suo-jing-li.html</link><description># 起因&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>小小的博客</title><link>https://Air-ban.github.io</link><description>一个喜欢各种新鲜事物的学习知识的人</description><copyright>小小的博客</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://raw.githubusercontent.com/Air-ban/Air-ban.github.io/main/pages.jpg</url><title>avatar</title><link>https://Air-ban.github.io</link></image><lastBuildDate>Mon, 24 Jun 2024 17:53:05 +0000</lastBuildDate><managingEditor>小小的博客</managingEditor><ttl>60</ttl><webMaster>小小的博客</webMaster><item><title>被勒索经历</title><link>https://Air-ban.github.io/post/bei-le-suo-jing-li.html</link><description># 起因&#13;
 某天晚上，我闲来无事，突然想要整理一下那极其混乱的邮件，就在整理的时候，看到了一个非常令我诧异的邮件，里面包含了我所有的*浏览器*保存的密码，还有一张我的屏幕截图，大致情况如图所示&#13;
 ![3f0c6ac2ef0c4d866802f6f81b1ccf05.png](https://s2.loli.net/2024/06/25/LDHJBITgcpXw7hU.png)&#13;
 我就很诧异啊，什么情况，怎么泄露的？我想啊想，还是没想到，但是可以看到，下面他给出了details，那就让我们一起看看里面写了什么&#13;
@@ -15,20 +15,4 @@
 这对于大部分人来说，应该是极小概率遇到的事件，但我就是那个幸运儿，虽然不知道干了什么好事，但总归不是什么好事，还是希望大家以后可以多多加强个人信息保护意识，减少此类事件的发生&#13;
 &#13;
 &#13;
-。</description><guid isPermaLink="true">https://Air-ban.github.io/post/bei-le-suo-jing-li.html</guid><pubDate>Mon, 24 Jun 2024 17:42:50 +0000</pubDate></item><item><title>记一次被勒索</title><link>https://Air-ban.github.io/post/ji-yi-ci-bei-le-suo.html</link><description># 起因&#13;
-某天晚上，我闲来无事，突然想要整理一下那极其混乱的邮件，就在整理的时候，看到了一个非常令我诧异的邮件，里面包含了我所有的*浏览器*保存的密码，还有一张我的屏幕截图，大致情况如图所示&#13;
-![3f0c6ac2ef0c4d866802f6f81b1ccf05.png](https://s2.loli.net/2024/06/25/LDHJBITgcpXw7hU.png)&#13;
-我就很诧异啊，什么情况，怎么泄露的？我想啊想，还是没想到，但是可以看到，下面他给出了details，那就让我们一起看看里面写了什么&#13;
-## 离谱的details&#13;
-***已使用Google进行机翻***&#13;
-![755662f6fa4cb72a9f943dfafaa5028b.png](https://s2.loli.net/2024/06/25/49hCDuUiQLKJAcz.png)&#13;
-&#13;
-&#13;
-好的，这一切让我更摸不着头脑了，里面一个很牛逼哄哄的人威胁我给他比特币钱包打款1050刀，不然拿我账号去乱搞，此时此刻，我突然回想到前几天，微软强制我重置密码，这么看来，他的东西应该是已经过期的了，此时此刻的我丝毫不慌，甚至写了篇邮件骂了回去，不过还是让我细思极恐，毕竟我平日里也是比较喜欢像这样监视他人的，但是我并没有什么坏心思，但这次，让我感觉，杀软是不装不行了，我之前电脑一直是**裸奔的状态**，直到这次，我重新把火绒下回来了&#13;
-### 启示&#13;
-其实也不能算作是启示吧，只能说是给我们一点小提醒，这堆密码泄露了，没什么，但真正重要的是密码的习惯，现在导致我不可以使用一些**比较好记的密码**了，岂可休，于是乎我换了一套新的密码体系，只不过这套新的密码体系还需要一段时间来适应&#13;
-&#13;
-这对于大部分人来说，应该是极小概率遇到的事件，但我就是那个幸运儿，虽然不知道干了什么好事，但总归不是什么好事，还是希望大家以后可以多多加强个人信息保护意识，减少此类事件的发生&#13;
-&#13;
-&#13;
-。</description><guid isPermaLink="true">https://Air-ban.github.io/post/ji-yi-ci-bei-le-suo.html</guid><pubDate>Mon, 24 Jun 2024 17:38:59 +0000</pubDate></item></channel></rss>
+。</description><guid isPermaLink="true">https://Air-ban.github.io/post/bei-le-suo-jing-li.html</guid><pubDate>Mon, 24 Jun 2024 17:42:50 +0000</pubDate></item></channel></rss>
