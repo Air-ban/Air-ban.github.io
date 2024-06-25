@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html data-color-mode="light" data-dark-theme="dark" data-light-theme="light" lang="zh-CN">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="//cdn.staticfile.net/Primer/21.0.7/primer.css" rel="stylesheet" />
+    <link rel="icon" href="https://img.picui.cn/free/2024/06/25/6679b2b326191.jpg"><script>
+        let theme = localStorage.getItem("meek_theme") || "light";
+        document.documentElement.setAttribute("data-color-mode", theme);
+    </script>
+<meta name="description" content="# 说在前面
+>没电脑的，请直接退出此教程，谢谢！在ROOT的操作过程中，85%的步骤都依靠电脑，没电脑是不行的，所以不要浪费自己的时间，谢谢！
+## 什么是root
+此处引用百科
+>手机ROOT通常是指针对Android系统的手机而言，它使得用户可以获取Android操作系统的超级用户权限。">
+<meta property="og:title" content="安卓手机ROOT教程">
+<meta property="og:description" content="# 说在前面
+>没电脑的，请直接退出此教程，谢谢！在ROOT的操作过程中，85%的步骤都依靠电脑，没电脑是不行的，所以不要浪费自己的时间，谢谢！
+## 什么是root
+此处引用百科
+>手机ROOT通常是指针对Android系统的手机而言，它使得用户可以获取Android操作系统的超级用户权限。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://Air-ban.github.io/post/an-zhuo-shou-ji-ROOT-jiao-cheng.html">
+<meta property="og:image" content="https://img.picui.cn/free/2024/06/25/6679b2b326191.jpg">
+<title>安卓手机ROOT教程</title>
+
+
+</head>
+<style>
+body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;padding: 45px;font-size: 16px;font-family: sans-serif;line-height: 1.25;}
+#header{display:flex;padding-bottom:8px;border-bottom: 1px solid var(--borderColor-muted, var(--color-border-muted));margin-bottom: 16px;}
+#footer {margin-top:64px; text-align: center;font-size: small;}
+
+</style>
+
+<style>
+.postTitle{margin: auto 0;font-size:40px;font-weight:bold;}
+.title-right{display:flex;margin:auto 0 0 auto;}
+.title-right .circle{padding: 14px 16px;margin-right:8px;}
+#postBody{border-bottom: 1px solid var(--color-border-default);padding-bottom:36px;}
+#postBody hr{height:2px;}
+#cmButton{height:48px;margin-top:48px;}
+#comments{margin-top:64px;}
+.g-emoji{font-size:24px;}
+@media (max-width: 600px) {
+    body {padding: 8px;}
+    .postTitle{font-size:24px;}
+}
+</style>
+
+
+
+
+<body>
+    <div id="header">
+<h1 class="postTitle">安卓手机ROOT教程</h1>
+<div class="title-right">
+    <a href="https://Air-ban.github.io" id="buttonHome" class="btn btn-invisible circle" title="首页">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathHome" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+    <a href="https://github.com/Air-ban/Air-ban.github.io/issues/6" target="_blank" class="btn btn-invisible circle" title="Issue">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathIssue" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+
+    <a class="btn btn-invisible circle" onclick="modeSwitch();" title="切换主题">
+        <svg class="octicon" width="16" height="16" >
+            <path id="themeSwitch" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+
+</div>
+</div>
+    <div id="content">
+<div class="markdown-body" id="postBody"><h1>说在前面</h1>
+<blockquote>
+<p>没电脑的，请直接退出此教程，谢谢！在ROOT的操作过程中，85%的步骤都依靠电脑，没电脑是不行的，所以不要浪费自己的时间，谢谢！</p>
+</blockquote>
+<h2>什么是root</h2>
+<p>此处引用百科</p>
+<blockquote>
+<p>手机ROOT通常是指针对Android系统的手机而言，它使得用户可以获取Android操作系统的超级用户权限。root通常用于帮助用户越过手机制造商的限制，使得用户可以卸载手机制造商、运营商、第三方渠道商预装在手机中某些应用，以及运行一些需要超级用户权限的应用程序。Android系统的root与Apple iOS系统的越狱相似。</p>
+</blockquote>
+<p>说白了就是获得最高权限，和Linux系统中的root用户类似</p>
+<h2>为什么要root？</h2>
+<p>其实我并不想和你大费周章，为什么root，这个理由多了去了，开挂，优化系统，抑或是一些特殊职业的特殊需求，都可能需要root来达成</p>
+<blockquote>
+<p>虽然理由千奇百怪，但最好不建议用作非法用途</p>
+</blockquote>
+<h2>root常用工具</h2>
+<p>现在通常使用magisk进行root以及root后的权限管理，这里就拿magisk作为例子</p>
+<p>magisk是一个开源项目，你可以在GitHub中找到开放源代码仓库：<a href="https://github.com/topjohnwu/Magisk">magisk</a><br>
+目前的最新版本是v27.0（截至2024/6/25）</p>
+<h3>root具体步骤</h3>
+<p><em><strong>首先请确保你的手机已经解锁boot loader</strong></em>，这一步至关重要，如何知道自己的手机是否解锁？请自行通过后续步骤进行测试</p>
+<p>现在，就假设你什么都不懂，请根据我的后续步骤一步一步操作，不要认为自己假聪明。不要超前或滞后操作</p>
+<h4>第一步：</h4>
+<p>在手机中下载并安装magisk，此处为<a href="https://mrzzoxo.lanzoue.com/iEiWb1s6quif" rel="nofollow">下载链接</a>，此处为蓝奏云网盘，不挂GitHub原始链接是怕某些用户无法正常访问GitHub，此处为<a href="https://github.com/topjohnwu/Magisk/releases">GitHub原始下载链接</a>如果担心软件被篡改或植入木马，请通过此链接进行下载，下载好后直接安装即可</p>
+<h4>第二步：</h4>
+<p>现在打开你手机上的的magisk软件，应当是和截图中一样，版本号可以不同，但请确保其他部分相同<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/fa9850bb5ca6c2ceb362567e5c14704bb5cb7c1baf7de348c9c46ac4bea48362/68747470733a2f2f696d672e70696375692e636e2f667265652f323032342f30362f32352f363637613939373236326434642e706e67"><img src="https://camo.githubusercontent.com/fa9850bb5ca6c2ceb362567e5c14704bb5cb7c1baf7de348c9c46ac4bea48362/68747470733a2f2f696d672e70696375692e636e2f667265652f323032342f30362f32352f363637613939373236326434642e706e67" alt="Screenshot_20240625-181833_Magisk.png" data-canonical-src="https://img.picui.cn/free/2024/06/25/667a997262d4d.png" style="max-width: 100%;"></a><br>
+然后我们此时查看一下自己的手机是<strong>什么系统以及什么版本</strong>，此处是在刷写前最为重要的步骤，请一定确保版本正确无误，此处以最新的<a href="https://hyperos.mi.com/" title="这狗屎玩意还真有人用" rel="nofollow">hyperOS</a>举例，首先查看自己的手机型号，再查看系统版本号，此处如图所示<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/f8ff07203b7a01b765d618723a2ea1b5e0fb85e05c80e0c596be3d844d8398d2/68747470733a2f2f696d672e70696375692e636e2f667265652f323032342f30362f32352f363637613962396661313763302e6a706567"><img src="https://camo.githubusercontent.com/f8ff07203b7a01b765d618723a2ea1b5e0fb85e05c80e0c596be3d844d8398d2/68747470733a2f2f696d672e70696375692e636e2f667265652f323032342f30362f32352f363637613962396661313763302e6a706567" alt="aa08b9dbc90032dac2fa907eb72d7826.jpeg" data-canonical-src="https://img.picui.cn/free/2024/06/25/667a9b9fa17c0.jpeg" style="max-width: 100%;"></a><br>
+我们在这张图中需要获得两个信息</p>
+<ol>
+<li>手机型号，此处为Redmi K70</li>
+<li>手机所搭载系统版本，此处为hyperOS1.0.4.0.UNKCNXM</li>
+</ol>
+<p>在获得上述信息后，将手机放到一边，进行下一步</p>
+<h3>第三步：</h3>
+<p>打开手机对应的系统下载网站，进行对应版本的系统下载，此处推荐下载卡刷包，当然，卡刷包或者线刷包都是没问题的，此处小米系手机对应<a href="https://xiaomirom.com/" rel="nofollow">XIAOMIROM</a>，当然肯定还有一加用户，一加用户对应这位大叔的<a href="https://yun.daxiaamu.com/OnePlus_Roms/" rel="nofollow">网盘</a></p>
+<p>首先，点击上面的链接进入xiaomirom,点击中间的搜索框，搜索对应机型，例如此处为K70则直接搜素K70即可<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/9b979ba065522f39bafbaa02e5d6634dba61d28fb671d8a19c41f877a8dd872b/68747470733a2f2f696d672e70696375692e636e2f667265652f323032342f30362f32352f363637613965636634386236662e706e67"><img src="https://camo.githubusercontent.com/9b979ba065522f39bafbaa02e5d6634dba61d28fb671d8a19c41f877a8dd872b/68747470733a2f2f696d672e70696375692e636e2f667265652f323032342f30362f32352f363637613965636634386236662e706e67" alt="1719312154176.png" data-canonical-src="https://img.picui.cn/free/2024/06/25/667a9ecf48b6f.png" style="max-width: 100%;"></a><br>
+<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/e890bc5ff3b13ab9f3fc0156a7869e2bbdc7d18f8dfd2d6c0303a73872e739f9/68747470733a2f2f696d672e70696375692e636e2f667265652f323032342f30362f32352f363637613966303862666162632e706e67"><img src="https://camo.githubusercontent.com/e890bc5ff3b13ab9f3fc0156a7869e2bbdc7d18f8dfd2d6c0303a73872e739f9/68747470733a2f2f696d672e70696375692e636e2f667265652f323032342f30362f32352f363637613966303862666162632e706e67" alt="1719312227006.png" data-canonical-src="https://img.picui.cn/free/2024/06/25/667a9f08bfabc.png" style="max-width: 100%;"></a><br>
+直接点击<em><strong>国行版</strong></em>进入即可，在下一个页面中翻找<strong>对应</strong>的系统版本，找到后点击下载<br>
+<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/b7b6e29e851ac03771bf97f695d8a956dc0a48d93c1f7c72e93f9eaf1081f40a/68747470733a2f2f696d672e70696375692e636e2f667265652f323032342f30362f32352f363637613966353961653731382e706e67"><img src="https://camo.githubusercontent.com/b7b6e29e851ac03771bf97f695d8a956dc0a48d93c1f7c72e93f9eaf1081f40a/68747470733a2f2f696d672e70696375692e636e2f667265652f323032342f30362f32352f363637613966353961653731382e706e67" alt="1719312295553.png" data-canonical-src="https://img.picui.cn/free/2024/06/25/667a9f59ae718.png" style="max-width: 100%;"></a><br>
+此处通常下载recovery卡刷包，点击小米官方即可开始下载<br>
+<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/c0838203760c7df7648e922a71e48178f36b7de7fe8da45287424b10e895dfb5/68747470733a2f2f696d672e70696375692e636e2f667265652f323032342f30362f32352f363637613966393162336662322e706e67"><img src="https://camo.githubusercontent.com/c0838203760c7df7648e922a71e48178f36b7de7fe8da45287424b10e895dfb5/68747470733a2f2f696d672e70696375692e636e2f667265652f323032342f30362f32352f363637613966393162336662322e706e67" alt="1719312351334.png" data-canonical-src="https://img.picui.cn/free/2024/06/25/667a9f91b3fb2.png" style="max-width: 100%;"></a><br>
+当然，你们可能会遇到下载速度过于感人，此处可以参考此<a href="https://magiskcn.com/mi-hosts" rel="nofollow">教程</a>以解决问题</p>
+<p>然后就是漫长的下载，下载完成后，是一个压缩包，我们需要把他解压出来，使用正常的解压缩软件解压即可，如图所示<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/26e1cc43d3cc5ec46c1feb354ebf02c0ead9a4754c318f1550a99ba835b6caef/68747470733a2f2f696d672e70696375692e636e2f667265652f323032342f30362f32352f363637616133333462346230622e706e67"><img src="https://camo.githubusercontent.com/26e1cc43d3cc5ec46c1feb354ebf02c0ead9a4754c318f1550a99ba835b6caef/68747470733a2f2f696d672e70696375692e636e2f667265652f323032342f30362f32352f363637616133333462346230622e706e67" alt="1719313282484.png" data-canonical-src="https://img.picui.cn/free/2024/06/25/667aa334b4b0b.png" style="max-width: 100%;"></a><br>
+<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/dcab6ddab0fcbdcfb8aeef5f038b9fcc48928a22bf9cc93d0a2d74d8b392d568/68747470733a2f2f696d672e70696375692e636e2f667265652f323032342f30362f32352f363637616133376265646538352e706e67"><img src="https://camo.githubusercontent.com/dcab6ddab0fcbdcfb8aeef5f038b9fcc48928a22bf9cc93d0a2d74d8b392d568/68747470733a2f2f696d672e70696375692e636e2f667265652f323032342f30362f32352f363637616133376265646538352e706e67" alt="1719313387553.png" data-canonical-src="https://img.picui.cn/free/2024/06/25/667aa37bede85.png" style="max-width: 100%;"></a><br>
+里面这几个文件，你都不需要在乎，你需要ROOT，那么你只需要在乎<code class="notranslate">payload.bin</code>这个文件，此处我们需要下载payload-dumper这个软件，此处是<a href="https://mrzzoxo.lanzoue.com/b02plgdpi" rel="nofollow">下载链接</a>，根据个人系统版本，按需下载，下载完后解压出来，内容如图所示<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/ad0e140323b0adc0dc571a59b3512f2882f97e45c0b57f744e74c8a35753fff7/68747470733a2f2f696d672e70696375692e636e2f667265652f323032342f30362f32352f363637616134613263633761372e706e67"><img src="https://camo.githubusercontent.com/ad0e140323b0adc0dc571a59b3512f2882f97e45c0b57f744e74c8a35753fff7/68747470733a2f2f696d672e70696375692e636e2f667265652f323032342f30362f32352f363637616134613263633761372e706e67" alt="1719313647509.png" data-canonical-src="https://img.picui.cn/free/2024/06/25/667aa4a2cc7a7.png" style="max-width: 100%;"></a><br>
+接下来，将你刚刚解压出来的<code class="notranslate">payload.bin</code>放到这个文件夹中，如图所示<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/d3c2f5cdbf313974fbb2248612abdf033ebcee087286a949ffdfbf1402241847/68747470733a2f2f696d672e70696375692e636e2f667265652f323032342f30362f32352f363637616135303363303938382e706e67"><img src="https://camo.githubusercontent.com/d3c2f5cdbf313974fbb2248612abdf033ebcee087286a949ffdfbf1402241847/68747470733a2f2f696d672e70696375692e636e2f667265652f323032342f30362f32352f363637616135303363303938382e706e67" alt="1719313745754.png" data-canonical-src="https://img.picui.cn/free/2024/06/25/667aa503c0988.png" style="max-width: 100%;"></a><br>
+点击<code class="notranslate">打开CMD命令行.bat</code>后，如图所示<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/a1cdb3dbcb3536a2542908d00a3f15a8a0f5acff735b9a7812a01eddccf51911/68747470733a2f2f696d672e70696375692e636e2f667265652f323032342f30362f32352f363637616135353638303538382e706e67"><img src="https://camo.githubusercontent.com/a1cdb3dbcb3536a2542908d00a3f15a8a0f5acff735b9a7812a01eddccf51911/68747470733a2f2f696d672e70696375692e636e2f667265652f323032342f30362f32352f363637616135353638303538382e706e67" alt="1719313828406.png" data-canonical-src="https://img.picui.cn/free/2024/06/25/667aa55680588.png" style="max-width: 100%;"></a><br>
+里面给了三个选项，选哪个呢？此处具体查看你的手机处理器，如下表所示</p>
+<table role="table">
+<thead>
+<tr>
+<th align="center">处理器</th>
+<th align="center">对应提取文件</th>
+<th align="center">对应输入字母</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">骁龙8gen1</td>
+<td align="center">boot.img</td>
+<td align="center">b</td>
+</tr>
+<tr>
+<td align="center">骁龙8gen1+</td>
+<td align="center">boot.img</td>
+<td align="center">b</td>
+</tr>
+<tr>
+<td align="center">骁龙8gen2</td>
+<td align="center">init_boot.img</td>
+<td align="center">i</td>
+</tr>
+<tr>
+<td align="center">骁龙8gen3</td>
+<td align="center">init_boot.img</td>
+<td align="center">i</td>
+</tr>
+<tr>
+<td align="center">天玑9200+</td>
+<td align="center">init_boot.img</td>
+<td align="center">i</td>
+</tr>
+</tbody>
+</table>
+<p>此处根据出场搭载系统内核版本确定，此处使用处理器确定，只是为了方便小白用户查阅并使用，原因是</p>
+<blockquote>
+<p>对于发布时搭载 Android 13 的设备，通用 ramdisk 将从 boot 映像中移除，并放置在单独的 init_boot 映像中</p>
+</blockquote>
+<p>此处是<a href="https://source.android.google.cn/docs/core/bootloader/partitions/generic-boot?hl=zh-cn" rel="nofollow">安卓官方文档</a>，所以，只要你的手机处理器发布年份小于骁龙8gen1+的发布年份，就请无脑提取<code class="notranslate">boot.img</code></p>
+<p>好的，此处我们为K70，处理器为<strong>骁龙8gen2</strong>我们应当提取<code class="notranslate">init_boot.img</code>直接输入字母<code class="notranslate">I</code>后按下回车即可，随后会自动打开提取好后的文件夹，里面有我们心心念念的<code class="notranslate">init_boot.img</code>，如图所示<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/35569b2caa82cac94577467d40e62d992374d14f2d4defe963d496d81e26a2e7/68747470733a2f2f696d672e70696375692e636e2f667265652f323032342f30362f32352f363637616138643937663861622e706e67"><img src="https://camo.githubusercontent.com/35569b2caa82cac94577467d40e62d992374d14f2d4defe963d496d81e26a2e7/68747470733a2f2f696d672e70696375692e636e2f667265652f323032342f30362f32352f363637616138643937663861622e706e67" alt="1719314727806.png" data-canonical-src="https://img.picui.cn/free/2024/06/25/667aa8d97f8ab.png" style="max-width: 100%;"></a><br>
+接下来，我们将手机与电脑通过数据线连接，并且在手机上选择文件传输模式，将刚刚提取出来的<code class="notranslate">init_boot.img</code>放到手机的download文件夹中，如图所示<br>
+<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/6a323f43aa399bfa18e69f240a55dd0048ee7dae723e580ed1c9401e1dfb9b06/68747470733a2f2f696d672e70696375692e636e2f667265652f323032342f30362f32352f363637616161366163613235352e706e67"><img src="https://camo.githubusercontent.com/6a323f43aa399bfa18e69f240a55dd0048ee7dae723e580ed1c9401e1dfb9b06/68747470733a2f2f696d672e70696375692e636e2f667265652f323032342f30362f32352f363637616161366163613235352e706e67" alt="1719315128837.png" data-canonical-src="https://img.picui.cn/free/2024/06/25/667aaa6aca255.png" style="max-width: 100%;"></a><br>
+然后我们将镜像文件复制到Download文件夹中<br>
+<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/1f0a3fe322421de0a7d5e8075fc828bca2cc21bbcfeeebf2ef7fdb8d52d82290/68747470733a2f2f696d672e70696375692e636e2f667265652f323032342f30362f32352f363637616161313364386433372e706e67"><img src="https://camo.githubusercontent.com/1f0a3fe322421de0a7d5e8075fc828bca2cc21bbcfeeebf2ef7fdb8d52d82290/68747470733a2f2f696d672e70696375692e636e2f667265652f323032342f30362f32352f363637616161313364386433372e706e67" alt="1719315041772.png" data-canonical-src="https://img.picui.cn/free/2024/06/25/667aaa13d8d37.png" style="max-width: 100%;"></a><br>
+OK，现在你的手机上已经有了原始的<code class="notranslate">init_boot.img</code>文件，现在只需要通过使用magisk修补即可</p>
+<h3>第四步：</h3>
+<p>接下来，打开你手机中的magisk软件，点击第一个方框中的安装，如图所示<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/3ff63e29458888aa703ac6d836430bc13b4cdf2543d4b8d74d77d7db285fb77f/68747470733a2f2f696d672e70696375692e636e2f667265652f323032342f30362f32352f363637616162383634356435382e706e67"><img src="https://camo.githubusercontent.com/3ff63e29458888aa703ac6d836430bc13b4cdf2543d4b8d74d77d7db285fb77f/68747470733a2f2f696d672e70696375692e636e2f667265652f323032342f30362f32352f363637616162383634356435382e706e67" alt="1719315412033.png" data-canonical-src="https://img.picui.cn/free/2024/06/25/667aab8645d58.png" style="max-width: 100%;"></a>然后选择<code class="notranslate">选择并修补一个文件</code>如图所示<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/90df8b34a9c6f055a9e4fa3b91e751d5e61e066dcd2a282f1d17e4d259dde667/68747470733a2f2f696d672e70696375692e636e2f667265652f323032342f30362f32352f363637616162643636303337652e706e67"><img src="https://camo.githubusercontent.com/90df8b34a9c6f055a9e4fa3b91e751d5e61e066dcd2a282f1d17e4d259dde667/68747470733a2f2f696d672e70696375692e636e2f667265652f323032342f30362f32352f363637616162643636303337652e706e67" alt="1719315492281.png" data-canonical-src="https://img.picui.cn/free/2024/06/25/667aabd66037e.png" style="max-width: 100%;"></a>接下来，你会进入系统文件夹，别慌了神，记得上文中我们把<code class="notranslate">init_boot.img</code>放哪了吗？对，就是Download文件夹，进去，选择刚刚放进来的<code class="notranslate">init_boot.img</code>文件，如图所示<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/234eff4cd7a1ca4922007fb2e31149155bd691b6b120dd717daa836ba1c786fe/68747470733a2f2f696d672e70696375692e636e2f667265652f323032342f30362f32352f363637616163373334313834612e706e67"><img src="https://camo.githubusercontent.com/234eff4cd7a1ca4922007fb2e31149155bd691b6b120dd717daa836ba1c786fe/68747470733a2f2f696d672e70696375692e636e2f667265652f323032342f30362f32352f363637616163373334313834612e706e67" alt="1719315648082.png" data-canonical-src="https://img.picui.cn/free/2024/06/25/667aac734184a.png" style="max-width: 100%;"></a><br>
+然后我们选择<code class="notranslate">init_boot.img</code>如图所示<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/c0bbb55c6ce0f95af6f23c7dd2228086e504f574a589e85108c7f654a4ea286b/68747470733a2f2f696d672e70696375692e636e2f667265652f323032342f30362f32352f363637616163623833333866632e706e67"><img src="https://camo.githubusercontent.com/c0bbb55c6ce0f95af6f23c7dd2228086e504f574a589e85108c7f654a4ea286b/68747470733a2f2f696d672e70696375692e636e2f667265652f323032342f30362f32352f363637616163623833333866632e706e67" alt="1719315718132.png" data-canonical-src="https://img.picui.cn/free/2024/06/25/667aacb8338fc.png" style="max-width: 100%;"></a><br>
+然后点击<code class="notranslate">开始</code>，如图所示<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/3dab7419cea77d26cef5a3aaa366b6f223b6fbf8da3477021202c359d77acd45/68747470733a2f2f696d672e70696375692e636e2f667265652f323032342f30362f32352f363637616163663236313464372e706e67"><img src="https://camo.githubusercontent.com/3dab7419cea77d26cef5a3aaa366b6f223b6fbf8da3477021202c359d77acd45/68747470733a2f2f696d672e70696375692e636e2f667265652f323032342f30362f32352f363637616163663236313464372e706e67" alt="1719315776525.png" data-canonical-src="https://img.picui.cn/free/2024/06/25/667aacf2614d7.png" style="max-width: 100%;"></a><br>
+然后等待，当看到如下输出的时候，即可关闭magisk软件</p>
+<blockquote>
+<p>-All done!</p>
+</blockquote>
+<p>如图所示<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/c85fbbc6ae72d60a6f617b1ba52d4a3b20753bd7988f6b4b0f55fd1706bfd82e/68747470733a2f2f696d672e70696375692e636e2f667265652f323032342f30362f32352f363637616164383063346238372e706e67"><img src="https://camo.githubusercontent.com/c85fbbc6ae72d60a6f617b1ba52d4a3b20753bd7988f6b4b0f55fd1706bfd82e/68747470733a2f2f696d672e70696375692e636e2f667265652f323032342f30362f32352f363637616164383063346238372e706e67" alt="1719315918833.png" data-canonical-src="https://img.picui.cn/free/2024/06/25/667aad80c4b87.png" style="max-width: 100%;"></a><br>
+好的，现在使用数据线连接手机和电脑，并且在手机中选择文件传输，如上文所述，然后我们和上文一样，打开手机的Download文件夹，你就会看到一个<code class="notranslate">magisk_patched-27000_XXXXX.img</code>的文件，将文件复制到电脑任意位置，此处建议直接复制到桌面，方便后续操作，如图所示<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/f43730cf3efcc8c1a02c4bed341b2ddc7a068f704b332a8a1e8230d705bb3993/68747470733a2f2f696d672e70696375692e636e2f667265652f323032342f30362f32352f363637616165363434616662632e706e67"><img src="https://camo.githubusercontent.com/f43730cf3efcc8c1a02c4bed341b2ddc7a068f704b332a8a1e8230d705bb3993/68747470733a2f2f696d672e70696375692e636e2f667265652f323032342f30362f32352f363637616165363434616662632e706e67" alt="1719316146038.png" data-canonical-src="https://img.picui.cn/free/2024/06/25/667aae644afbc.png" style="max-width: 100%;"></a><br>
+现在复制到桌面，如图所示<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/f92c2d73dd1d05fe79dc1f9004df81f9ecdfe17603c8e1381b5bfd16018e704a/68747470733a2f2f696d672e70696375692e636e2f667265652f323032342f30362f32352f363637616165613536333064652e706e67"><img src="https://camo.githubusercontent.com/f92c2d73dd1d05fe79dc1f9004df81f9ecdfe17603c8e1381b5bfd16018e704a/68747470733a2f2f696d672e70696375692e636e2f667265652f323032342f30362f32352f363637616165613536333064652e706e67" alt="1719316211208.png" data-canonical-src="https://img.picui.cn/free/2024/06/25/667aaea5630de.png" style="max-width: 100%;"></a></p>
+<h3>第五步：</h3>
+<p><strong>这是最重要的一步，所以请一定按照指示进行操作</strong></p>
+<p>首先下载adb工具集，此处是<a href="https://googledownloads.cn/android/repository/platform-tools-latest-windows.zip" rel="nofollow">Google官方下载链接</a>，下载好后，将里面所有的内容解压到一个文件夹中，如图所示<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/70f786885c72fa6b11ea62684216f048759f207d9e1befc0f4142a2ceec45935/68747470733a2f2f696d672e70696375692e636e2f667265652f323032342f30362f32352f363637616166616333396533642e706e67"><img src="https://camo.githubusercontent.com/70f786885c72fa6b11ea62684216f048759f207d9e1befc0f4142a2ceec45935/68747470733a2f2f696d672e70696375692e636e2f667265652f323032342f30362f32352f363637616166616333396533642e706e67" alt="1719316472372.png" data-canonical-src="https://img.picui.cn/free/2024/06/25/667aafac39e3d.png" style="max-width: 100%;"></a><br>
+接下来，安装所需驱动，此处是一键安装程序的<a href="https://www.lanzouw.com/i7hucfg" rel="nofollow">下载链接</a>，下载后解压打开，直接点击安装即可，如图所示</p>
+<p><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/ba12de07e3c57779b8a614ff91aeb02a080a9c95c67bcd35d4e49c932be29deb/68747470733a2f2f696d672e64646f6f6f2e636f6d2f75707069632f32303233313231362f66353135663962303630313063333837363030643339326132633666336431332e706e67"><img src="https://camo.githubusercontent.com/ba12de07e3c57779b8a614ff91aeb02a080a9c95c67bcd35d4e49c932be29deb/68747470733a2f2f696d672e64646f6f6f2e636f6d2f75707069632f32303233313231362f66353135663962303630313063333837363030643339326132633666336431332e706e67" alt="1" data-canonical-src="https://img.ddooo.com/uppic/20231216/f515f9b06010c387600d392a2c6f3d13.png" style="max-width: 100%;"></a></p>
+<p>然后此时，我们回到刚刚的adb文件夹中，我们直接点击文件夹上面的地址栏，在中输入<code class="notranslate">cmd</code>后点击回车，如图所示<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/ad54d2282a9a7d2f19f591a5d6231c8996148d5a41a8f7638025ff7c7a2defae/68747470733a2f2f73322e6c6f6c692e6e65742f323032342f30362f32352f6451686274765538344c4b506b78792e706e67"><img src="https://camo.githubusercontent.com/ad54d2282a9a7d2f19f591a5d6231c8996148d5a41a8f7638025ff7c7a2defae/68747470733a2f2f73322e6c6f6c692e6e65742f323032342f30362f32352f6451686274765538344c4b506b78792e706e67" alt="image.png" data-canonical-src="https://s2.loli.net/2024/06/25/dQhbtvU84LKPkxy.png" style="max-width: 100%;"></a><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/e5d7963fe4a90831a113c21c937d8402f4c920a854107399fecc0061cec8e5fe/68747470733a2f2f73322e6c6f6c692e6e65742f323032342f30362f32352f596c5057536a587452546b416945792e706e67"><img src="https://camo.githubusercontent.com/e5d7963fe4a90831a113c21c937d8402f4c920a854107399fecc0061cec8e5fe/68747470733a2f2f73322e6c6f6c692e6e65742f323032342f30362f32352f596c5057536a587452546b416945792e706e67" alt="image.png" data-canonical-src="https://s2.loli.net/2024/06/25/YlPWSjXtRTkAiEy.png" style="max-width: 100%;"></a></p>
+<p>在cmd命令行中输入</p>
+<blockquote>
+<p>adb</p>
+</blockquote>
+<p>查看输出，如果<strong>没有</strong>输出</p>
+<blockquote>
+<p>'adb' 不是内部或外部命令，也不是可运行的程序<br>
+或批处理文件。</p>
+</blockquote>
+<p>则代表成功进入adb命令行，现在我们使用数据线连接手机与电脑，在手机上打开USB调试，如何打开USB调试建议百度，本文不过多赘述</p>
+<p>在命令行中输入</p>
+<blockquote>
+<p>adb devices</p>
+</blockquote>
+<p>会看到如下输出</p>
+<p><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/7fd10e18385bc9cfe05611c79105938fb6820a176d3354c4d89e9bf6c76dee4a/68747470733a2f2f73322e6c6f6c692e6e65742f323032342f30362f32352f7a68696d746e6a66347077387145762e706e67"><img src="https://camo.githubusercontent.com/7fd10e18385bc9cfe05611c79105938fb6820a176d3354c4d89e9bf6c76dee4a/68747470733a2f2f73322e6c6f6c692e6e65742f323032342f30362f32352f7a68696d746e6a66347077387145762e706e67" alt="image.png" data-canonical-src="https://s2.loli.net/2024/06/25/zhimtnjf4pw8qEv.png" style="max-width: 100%;"></a></p>
+<p>如果没有看到如下输出，请检查手机是否弹出授权提示，如图所示<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/29cc5665237507ec39461ca8574b0db75c803714dc61a0d2787e0e16902a7f7a/68747470733a2f2f73322e6c6f6c692e6e65742f323032342f30362f32352f4e474d7856416445504667616a57762e706e67"><img src="https://camo.githubusercontent.com/29cc5665237507ec39461ca8574b0db75c803714dc61a0d2787e0e16902a7f7a/68747470733a2f2f73322e6c6f6c692e6e65742f323032342f30362f32352f4e474d7856416445504667616a57762e706e67" alt="Screenshot_20240625-200638_.png" data-canonical-src="https://s2.loli.net/2024/06/25/NGMxVAdEPFgajWv.png" style="max-width: 100%;"></a><br>
+点击允许即可</p>
+<p>接下来，我们在刚刚的命令行中输入</p>
+<blockquote>
+<p>adb reboot bootloader</p>
+</blockquote>
+<p>手机会自动重启到fastboot，接下来我们刷入刚刚修补的<code class="notranslate">init_boot.img</code></p>
+<blockquote>
+<p>fastboot flash init_boot magisk_patched-27000_xxxx.img</p>
+</blockquote>
+<p>注意，如果magisk修补镜像不在当前文件夹，可以直接将桌面上的magisk_patched-27000_xxxx.img拖进命令行</p>
+<blockquote>
+<p>fastboot flash init_boot &lt;此处拖入修补后的文件&gt;</p>
+</blockquote>
+<p>随后即可完成修补镜像的刷入，随后输入</p>
+<blockquote>
+<p>fastboot reboot</p>
+</blockquote>
+<p>即可重启回到系统中啦</p>
+<h2>注意</h2>
+<p>如果你是boot镜像，则将上述所有init_boot处换成boot，部分机型还需要换成boot_ab</p>
+<p>boot分区</p>
+<blockquote>
+<p>fastboot flash boot &lt;拖入boot镜像&gt;</p>
+</blockquote>
+<p>vab的boot分区</p>
+<blockquote>
+<p>fastboot flash boot_ab &lt;拖入boot镜像&gt;</p>
+</blockquote>
+<p>如果你的手机在输入flash指令后出现了如下报错</p>
+<blockquote>
+<p>error: FAILED (remote: flash is not allowed in Lock State)</p>
+</blockquote>
+<p>关键词，只要出现了notallowed in lock，十有八九就是没解锁，至于如何解锁，等我下一篇文章</p>
+<h1>至此END</h1></div>
+<div style="font-size:small;margin-top:8px;float:right;"></div>
+<button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
+<div class="comments" id="comments"></div>
+</div>
+    <div id="footer">Copyright © <span id="year"></span><a href="https://Air-ban.github.io"> 小小的博客 </a>
+<p>
+<span id="runday"></span>Powered by <a href="https://meekdai.com/Gmeek.html" target="_blank">Gmeek</a>
+</p>
+
+<script>
+if(""!=""){
+    var now=new Date();
+    var startSite=new Date("");
+    var diff=now.getTime()-startSite.getTime();
+    var diffDay=Math.floor(diff/(1000*60*60*24));
+    document.getElementById("year").innerHTML=now.getFullYear();
+    if(""!=""){document.getElementById("runday").innerHTML=" • "+"网站运行"+diffDay+"天"+" • ";}
+    else{document.getElementById("runday").innerHTML="网站运行"+diffDay+"天"+" • ";}
+}
+</script>
+</div>
+</body>
+<script>
+var IconList={'sun': 'M8 10.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM8 12a4 4 0 100-8 4 4 0 000 8zM8 0a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0V.75A.75.75 0 018 0zm0 13a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 018 13zM2.343 2.343a.75.75 0 011.061 0l1.06 1.061a.75.75 0 01-1.06 1.06l-1.06-1.06a.75.75 0 010-1.06zm9.193 9.193a.75.75 0 011.06 0l1.061 1.06a.75.75 0 01-1.06 1.061l-1.061-1.06a.75.75 0 010-1.061zM16 8a.75.75 0 01-.75.75h-1.5a.75.75 0 010-1.5h1.5A.75.75 0 0116 8zM3 8a.75.75 0 01-.75.75H.75a.75.75 0 010-1.5h1.5A.75.75 0 013 8zm10.657-5.657a.75.75 0 010 1.061l-1.061 1.06a.75.75 0 11-1.06-1.06l1.06-1.06a.75.75 0 011.06 0zm-9.193 9.193a.75.75 0 010 1.06l-1.06 1.061a.75.75 0 11-1.061-1.06l1.06-1.061a.75.75 0 011.061 0z', 'moon': 'M9.598 1.591a.75.75 0 01.785-.175 7 7 0 11-8.967 8.967.75.75 0 01.961-.96 5.5 5.5 0 007.046-7.046.75.75 0 01.175-.786zm1.616 1.945a7 7 0 01-7.678 7.678 5.5 5.5 0 107.678-7.678z', 'sync': 'M1.705 8.005a.75.75 0 0 1 .834.656 5.5 5.5 0 0 0 9.592 2.97l-1.204-1.204a.25.25 0 0 1 .177-.427h3.646a.25.25 0 0 1 .25.25v3.646a.25.25 0 0 1-.427.177l-1.38-1.38A7.002 7.002 0 0 1 1.05 8.84a.75.75 0 0 1 .656-.834ZM8 2.5a5.487 5.487 0 0 0-4.131 1.869l1.204 1.204A.25.25 0 0 1 4.896 6H1.25A.25.25 0 0 1 1 5.75V2.104a.25.25 0 0 1 .427-.177l1.38 1.38A7.002 7.002 0 0 1 14.95 7.16a.75.75 0 0 1-1.49.178A5.5 5.5 0 0 0 8 2.5Z', 'home': 'M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Zm1.25 1.171a.25.25 0 0 0-.312 0l-5.25 4.2a.25.25 0 0 0-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v5.25h2.75a.25.25 0 0 0 .25-.25V6.23a.25.25 0 0 0-.094-.195Z', 'github': 'M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z'};
+var utterancesLoad=0;
+
+let themeSettings={
+    "dark": ["dark","moon","#00f0ff","dark-blue"],
+    "light": ["light","sun","#ff5000","github-light"],
+    "auto": ["auto","sync","","preferred-color-scheme"]
+};
+function changeTheme(mode, icon, color, utheme){
+    document.documentElement.setAttribute("data-color-mode",mode);
+    document.getElementById("themeSwitch").setAttribute("d",value=IconList[icon]);
+    document.getElementById("themeSwitch").parentNode.style.color=color;
+    if(utterancesLoad==1){utterancesTheme(utheme);}
+}
+function modeSwitch(){
+    let currentMode=document.documentElement.getAttribute('data-color-mode');
+    let newMode = currentMode === "light" ? "dark" : currentMode === "dark" ? "auto" : "light";
+    localStorage.setItem("meek_theme", newMode);
+    if(themeSettings[newMode]){
+        changeTheme(...themeSettings[newMode]);
+    }
+}
+function utterancesTheme(theme){
+    const message={type:'set-theme',theme: theme};
+    const iframe=document.getElementsByClassName('utterances-frame')[0];
+    iframe.contentWindow.postMessage(message,'https://utteranc.es');
+}
+if(themeSettings[theme]){changeTheme(...themeSettings[theme]);}
+console.log("\n %c Gmeek last https://github.com/Meekdai/Gmeek \n\n","padding:5px 0;background:#02d81d;color:#fff");
+</script>
+
+<script>
+document.getElementById("pathHome").setAttribute("d",IconList["home"]);
+document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
+
+function openComments(){
+    cm=document.getElementById("comments");
+    cmButton=document.getElementById("cmButton");
+    cmButton.innerHTML="loading";
+    span=document.createElement("span");
+    span.setAttribute("class","AnimatedEllipsis");
+    cmButton.appendChild(span);
+
+    script=document.createElement("script");
+    script.setAttribute("src","https://utteranc.es/client.js");
+    script.setAttribute("repo","Air-ban/Air-ban.github.io");
+    script.setAttribute("issue-term","title");
+    
+    if(localStorage.getItem("meek_theme")=="dark"){script.setAttribute("theme","dark-blue");}
+    else if(localStorage.getItem("meek_theme")=="light") {script.setAttribute("theme","github-light");}
+    else{script.setAttribute("theme","preferred-color-scheme");}
+    
+    script.setAttribute("crossorigin","anonymous");
+    script.setAttribute("async","");
+    cm.appendChild(script);
+
+    int=self.setInterval("iFrameLoading()",200);
+}
+
+function iFrameLoading(){
+    var utterances=document.getElementsByClassName('utterances');
+    if(utterances.length==1){
+        if(utterances[0].style.height!=""){
+            utterancesLoad=1;
+            int=window.clearInterval(int);
+            document.getElementById("cmButton").style.display="none";
+            console.log("utterances Load OK");
+        }
+    }
+}
+</script>
+
+
+</html>
