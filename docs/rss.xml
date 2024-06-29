@@ -1,5 +1,23 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>zzb的博客</title><link>https://Air-ban.github.io</link><description>骑骥一跃不能十步，驽马十驾亦能不舍</description><copyright>zzb的博客</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://img.picui.cn/free/2024/06/25/6679b2b326191.jpg</url><title>avatar</title><link>https://Air-ban.github.io</link></image><lastBuildDate>Fri, 28 Jun 2024 17:06:18 +0000</lastBuildDate><managingEditor>zzb的博客</managingEditor><ttl>60</ttl><webMaster>zzb的博客</webMaster><item><title>简谈哈希碰撞</title><link>https://Air-ban.github.io/post/jian-tan-ha-xi-peng-zhuang.html</link><description># 内容概览&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>zzb的博客</title><link>https://Air-ban.github.io</link><description>骑骥一跃不能十步，驽马十驾亦能不舍</description><copyright>zzb的博客</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://img.picui.cn/free/2024/06/25/6679b2b326191.jpg</url><title>avatar</title><link>https://Air-ban.github.io</link></image><lastBuildDate>Sat, 29 Jun 2024 16:16:15 +0000</lastBuildDate><managingEditor>zzb的博客</managingEditor><ttl>60</ttl><webMaster>zzb的博客</webMaster><item><title>毕业快乐！</title><link>https://Air-ban.github.io/post/bi-ye-kuai-le-%EF%BC%81.html</link><description># 该来的，总是会来的&#13;
+我的初中生涯将在明天画上句号，这也意味着往后的日子，我就不是初中生了，其实并没有什么实质的感觉，就好像是从一家公司，跳槽到了另一家公司，而且还需要承受更加苦难的工作，这一切都没什么&#13;
+&#13;
+## 名言名句&#13;
+以下是初中阶段，能让我发笑的句子，他们大多数都是由老师说出来的，确实活跃了课堂氛围，同时也调动了学生的积极情绪&#13;
+&gt;这个xxx有没有脑子啊！——班主任兼数学老师&#13;
+&#13;
+&gt;这题目对你们来说，都是小菜！ 我们才是真正的小菜 ——某同学与某老师的对话&#13;
+&#13;
+&gt;不带你们这么玩的奥，所有东西教过了，结果到你们这什么都不会 ——班主任兼数学老师&#13;
+&#13;
+&gt;我滴孩来！ ——班主任兼数学老师&#13;
+&#13;
+&gt;就你们这点水平，念什么书啊！ ——班主任兼数学老师&#13;
+&#13;
+当然还有更多的句子，我有的也记不起来了，肯定是数学老师留下的印象最深刻啦，也十分感激我的数学老师把我带进了数学的大门，是我遇到过的为数不多的好老师，虽然有时有点毒舌，但总归还是不错的&#13;
+&#13;
+# 毕业快乐！&#13;
+![freecompress-1419C967EE943032451213E2C884F882.jpg](https://s2.loli.net/2024/06/30/vCaLA7jVB4RXD1u.jpg)。</description><guid isPermaLink="true">https://Air-ban.github.io/post/bi-ye-kuai-le-%EF%BC%81.html</guid><pubDate>Sat, 29 Jun 2024 16:15:52 +0000</pubDate></item><item><title>简谈哈希碰撞</title><link>https://Air-ban.github.io/post/jian-tan-ha-xi-peng-zhuang.html</link><description># 内容概览&#13;
 本文简要介绍哈希碰撞以及其中的生日攻击数学模型&#13;
 ## 一、哈希碰撞是什么？&#13;
 所谓哈希（hash），就是将不同的输入映射成独一无二的、固定长度的值（又称'哈希值'）。</description><guid isPermaLink="true">https://Air-ban.github.io/post/jian-tan-ha-xi-peng-zhuang.html</guid><pubDate>Fri, 28 Jun 2024 16:58:54 +0000</pubDate></item><item><title>关于4096位RSA加密在校园墙的运用</title><link>https://Air-ban.github.io/post/guan-yu-4096-wei-RSA-jia-mi-zai-xiao-yuan-qiang-de-yun-yong.html</link><description># 校园墙加密方式&#13;
