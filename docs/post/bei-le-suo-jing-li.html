@@ -4,7 +4,7 @@
     <meta content="text/html; charset=utf-8" http-equiv="content-type" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link href="//cdn.staticfile.net/Primer/21.0.7/primer.css" rel="stylesheet" />
+    <link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />
     <link rel="icon" href="https://img.picui.cn/free/2024/06/25/6679b2b326191.jpg"><script>
         let theme = localStorage.getItem("meek_theme") || "light";
         document.documentElement.setAttribute("data-color-mode", theme);
@@ -114,8 +114,10 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <p>其实也不能算作是启示吧，只能说是给我们一点小提醒，这堆密码泄露了，没什么，但真正重要的是密码的习惯，现在导致我不可以使用一些<strong>比较好记的密码</strong>了，岂可休，于是乎我换了一套新的密码体系，只不过这套新的密码体系还需要一段时间来适应</p>
 <p>这对于大部分人来说，应该是极小概率遇到的事件，但我就是那个幸运儿，虽然不知道干了什么好事，但总归不是什么好事，还是希望大家以后可以多多加强个人信息保护意识，减少此类事件的发生</p></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
+
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
 <div class="comments" id="comments"></div>
+
 </div>
     <div id="footer">Copyright © <span id="year"></span><a href="https://Air-ban.github.io"> zzb的博客 </a>
 <p>
@@ -170,6 +172,8 @@ console.log("\n %c Gmeek last https://github.com/Meekdai/Gmeek \n\n","padding:5p
 <script>
 document.getElementById("pathHome").setAttribute("d",IconList["home"]);
 document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
+
+
 
 function openComments(){
     cm=document.getElementById("comments");
