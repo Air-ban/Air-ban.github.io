@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>LOGIC的快乐小窝</title><link>https://Air-ban.github.io</link><description>骑骥一跃不能十步，驽马十驾亦能不舍</description><copyright>LOGIC的快乐小窝</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://raw.githubusercontent.com/Air-ban/picture_save/main/b_7b108cce3570ee08a43fd79691f1494a.jpg</url><title>avatar</title><link>https://Air-ban.github.io</link></image><lastBuildDate>Sat, 27 Jul 2024 16:48:06 +0000</lastBuildDate><managingEditor>LOGIC的快乐小窝</managingEditor><ttl>60</ttl><webMaster>LOGIC的快乐小窝</webMaster><item><title>基于ollama和maxkb的本地知识库问答系统搭建（一）</title><link>https://Air-ban.github.io/post/ji-yu-ollama-he-maxkb-de-ben-di-zhi-shi-ku-wen-da-xi-tong-da-jian-%EF%BC%88-yi-%EF%BC%89.html</link><description># 说在前面&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>LOGIC的快乐小窝</title><link>https://Air-ban.github.io</link><description>骑骥一跃不能十步，驽马十驾亦能不舍</description><copyright>LOGIC的快乐小窝</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://raw.githubusercontent.com/Air-ban/picture_save/main/b_7b108cce3570ee08a43fd79691f1494a.jpg</url><title>avatar</title><link>https://Air-ban.github.io</link></image><lastBuildDate>Tue, 30 Jul 2024 17:37:08 +0000</lastBuildDate><managingEditor>LOGIC的快乐小窝</managingEditor><ttl>60</ttl><webMaster>LOGIC的快乐小窝</webMaster><item><title>基于ollama和maxkb的本地知识库问答系统搭建（一）</title><link>https://Air-ban.github.io/post/ji-yu-ollama-he-maxkb-de-ben-di-zhi-shi-ku-wen-da-xi-tong-da-jian-%EF%BC%88-yi-%EF%BC%89.html</link><description># 说在前面&#13;
 本项目当然可以使用本地电脑，甚至可以较为落后的CPU，不过响应速度很感人，如果可以，建议使用API或者云服务器，如果一定需要确保信息的私密性，请确保本地硬件性能以确保体验&#13;
 ## 一，软件准备&#13;
 此处为ollama官网：https://ollama.com/&#13;
@@ -446,4 +446,28 @@ while True:&#13;
 这对于大部分人来说，应该是极小概率遇到的事件，但我就是那个幸运儿，虽然不知道干了什么好事，但总归不是什么好事，还是希望大家以后可以多多加强个人信息保护意识，减少此类事件的发生&#13;
 &#13;
 &#13;
-。</description><guid isPermaLink="true">https://Air-ban.github.io/post/bei-le-suo-jing-li.html</guid><pubDate>Mon, 24 Jun 2024 17:42:50 +0000</pubDate></item></channel></rss>
+。</description><guid isPermaLink="true">https://Air-ban.github.io/post/bei-le-suo-jing-li.html</guid><pubDate>Mon, 24 Jun 2024 17:42:50 +0000</pubDate></item><item><title>关于</title><link>https://Air-ban.github.io/about.html</link><description>**博客作者**：张忠宝&#13;
+&#13;
+只是学生罢了，所以写的东西大多数都**没啥脑子**，欢迎批评指正，谢谢！&#13;
+&#13;
+写这个东西，只是因为暑假太闲了，也希望自己在将来的某一天，看到这些年轻时候写的东西会有一些感慨吧&#13;
+&#13;
+## 后面的事情&#13;
+我还没想好怎么写，哈哈，不过有一点可以知道，我后面应该不会特别频繁的写博客，毕竟就像写日记一样，是个人爱好&#13;
+&#13;
+## 联系方式&#13;
+**邮箱：xiaoxiaofpu@outlook.com**&#13;
+&#13;
+**QQ：2739418404**&#13;
+&#13;
+就这样&#13;
+&#13;
+&gt;[!TIP]&#13;
+&gt;谁知道后面会怎么样呢？不知道，所以过好当下才是最重要的&#13;
+&#13;
+### 技术支持&#13;
+- 感谢由[Gmeek](https://github.com/Meekdai/Gmeek/)提供博客源代码&#13;
+- 感谢由[cloudflare](https://cloudflare.com)提供的免费CDN加速服务&#13;
+&#13;
+&#13;
+。</description><guid isPermaLink="true">https://Air-ban.github.io/about.html</guid><pubDate>Tue, 30 Jul 2024 17:36:44 +0000</pubDate></item></channel></rss>
