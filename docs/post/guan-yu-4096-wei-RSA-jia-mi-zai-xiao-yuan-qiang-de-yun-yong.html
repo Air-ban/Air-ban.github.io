@@ -399,27 +399,27 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <span class="pl-k">from</span> <span class="pl-s1">cryptography</span>.<span class="pl-s1">hazmat</span>.<span class="pl-s1">backends</span> <span class="pl-k">import</span> <span class="pl-s1">default_backend</span>
 
 <span class="pl-k">def</span> <span class="pl-en">generate_rsa_key_pair</span>(<span class="pl-s1">key_size</span><span class="pl-c1">=</span><span class="pl-c1">4096</span>):
-    <span class="pl-s1">private_key</span> <span class="pl-c1">=</span> <span class="pl-s1">rsa</span>.<span class="pl-en">generate_private_key</span>(
+    <span class="pl-s1">private_key</span> <span class="pl-c1">=</span> <span class="pl-s1">rsa</span>.<span class="pl-c1">generate_private_key</span>(
         <span class="pl-s1">public_exponent</span><span class="pl-c1">=</span><span class="pl-c1">65537</span>,
         <span class="pl-s1">key_size</span><span class="pl-c1">=</span><span class="pl-s1">key_size</span>,
         <span class="pl-s1">backend</span><span class="pl-c1">=</span><span class="pl-en">default_backend</span>()
     )
-    <span class="pl-s1">public_key</span> <span class="pl-c1">=</span> <span class="pl-s1">private_key</span>.<span class="pl-en">public_key</span>()
+    <span class="pl-s1">public_key</span> <span class="pl-c1">=</span> <span class="pl-s1">private_key</span>.<span class="pl-c1">public_key</span>()
     <span class="pl-k">return</span> <span class="pl-s1">private_key</span>, <span class="pl-s1">public_key</span>
 
 <span class="pl-k">def</span> <span class="pl-en">save_key</span>(<span class="pl-s1">key</span>, <span class="pl-s1">filename</span>):
     <span class="pl-k">with</span> <span class="pl-en">open</span>(<span class="pl-s1">filename</span>, <span class="pl-s">'wb'</span>) <span class="pl-k">as</span> <span class="pl-s1">f</span>:
-        <span class="pl-s1">f</span>.<span class="pl-en">write</span>(<span class="pl-s1">key</span>.<span class="pl-en">private_bytes</span>(
-            <span class="pl-s1">encoding</span><span class="pl-c1">=</span><span class="pl-s1">serialization</span>.<span class="pl-v">Encoding</span>.<span class="pl-v">PEM</span>,
-            <span class="pl-s1">format</span><span class="pl-c1">=</span><span class="pl-s1">serialization</span>.<span class="pl-v">PrivateFormat</span>.<span class="pl-v">PKCS8</span>,
-            <span class="pl-s1">encryption_algorithm</span><span class="pl-c1">=</span><span class="pl-s1">serialization</span>.<span class="pl-v">NoEncryption</span>()
+        <span class="pl-s1">f</span>.<span class="pl-c1">write</span>(<span class="pl-s1">key</span>.<span class="pl-c1">private_bytes</span>(
+            <span class="pl-s1">encoding</span><span class="pl-c1">=</span><span class="pl-s1">serialization</span>.<span class="pl-c1">Encoding</span>.<span class="pl-c1">PEM</span>,
+            <span class="pl-s1">format</span><span class="pl-c1">=</span><span class="pl-s1">serialization</span>.<span class="pl-c1">PrivateFormat</span>.<span class="pl-c1">PKCS8</span>,
+            <span class="pl-s1">encryption_algorithm</span><span class="pl-c1">=</span><span class="pl-s1">serialization</span>.<span class="pl-c1">NoEncryption</span>()
         ))
 
 <span class="pl-k">def</span> <span class="pl-en">save_public_key</span>(<span class="pl-s1">key</span>, <span class="pl-s1">filename</span>):
     <span class="pl-k">with</span> <span class="pl-en">open</span>(<span class="pl-s1">filename</span>, <span class="pl-s">'wb'</span>) <span class="pl-k">as</span> <span class="pl-s1">f</span>:
-        <span class="pl-s1">f</span>.<span class="pl-en">write</span>(<span class="pl-s1">key</span>.<span class="pl-en">public_bytes</span>(
-            <span class="pl-s1">encoding</span><span class="pl-c1">=</span><span class="pl-s1">serialization</span>.<span class="pl-v">Encoding</span>.<span class="pl-v">PEM</span>,
-            <span class="pl-s1">format</span><span class="pl-c1">=</span><span class="pl-s1">serialization</span>.<span class="pl-v">PublicFormat</span>.<span class="pl-v">SubjectPublicKeyInfo</span>
+        <span class="pl-s1">f</span>.<span class="pl-c1">write</span>(<span class="pl-s1">key</span>.<span class="pl-c1">public_bytes</span>(
+            <span class="pl-s1">encoding</span><span class="pl-c1">=</span><span class="pl-s1">serialization</span>.<span class="pl-c1">Encoding</span>.<span class="pl-c1">PEM</span>,
+            <span class="pl-s1">format</span><span class="pl-c1">=</span><span class="pl-s1">serialization</span>.<span class="pl-c1">PublicFormat</span>.<span class="pl-c1">SubjectPublicKeyInfo</span>
         ))
 
 <span class="pl-c"># 生成RSA密钥对</span>
@@ -437,31 +437,31 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <span class="pl-k">from</span> <span class="pl-s1">cryptography</span>.<span class="pl-s1">hazmat</span>.<span class="pl-s1">backends</span> <span class="pl-k">import</span> <span class="pl-s1">default_backend</span>
 <span class="pl-k">import</span> <span class="pl-s1">os</span>
 
-<span class="pl-k">def</span> <span class="pl-en">load_public_key</span>(<span class="pl-s1">key_path</span>: <span class="pl-s1">str</span>):
+<span class="pl-k">def</span> <span class="pl-en">load_public_key</span>(<span class="pl-s1">key_path</span>: <span class="pl-smi">str</span>):
     <span class="pl-k">with</span> <span class="pl-en">open</span>(<span class="pl-s1">key_path</span>, <span class="pl-s">'rb'</span>) <span class="pl-k">as</span> <span class="pl-s1">key_file</span>:
-        <span class="pl-s1">public_key</span> <span class="pl-c1">=</span> <span class="pl-s1">serialization</span>.<span class="pl-en">load_pem_public_key</span>(
-            <span class="pl-s1">key_file</span>.<span class="pl-en">read</span>(),
+        <span class="pl-s1">public_key</span> <span class="pl-c1">=</span> <span class="pl-s1">serialization</span>.<span class="pl-c1">load_pem_public_key</span>(
+            <span class="pl-s1">key_file</span>.<span class="pl-c1">read</span>(),
             <span class="pl-s1">backend</span><span class="pl-c1">=</span><span class="pl-en">default_backend</span>()
         )
     <span class="pl-k">return</span> <span class="pl-s1">public_key</span>
 
-<span class="pl-k">def</span> <span class="pl-en">encrypt_file_rsa</span>(<span class="pl-s1">public_key</span>: <span class="pl-s1">rsa</span>.<span class="pl-v">RSAPublicKey</span>, <span class="pl-s1">input_file_path</span>: <span class="pl-s1">str</span>, <span class="pl-s1">output_file_path</span>: <span class="pl-s1">str</span>):
+<span class="pl-k">def</span> <span class="pl-en">encrypt_file_rsa</span>(<span class="pl-s1">public_key</span>: <span class="pl-s1">rsa</span>.<span class="pl-c1">RSAPublicKey</span>, <span class="pl-s1">input_file_path</span>: <span class="pl-smi">str</span>, <span class="pl-s1">output_file_path</span>: <span class="pl-smi">str</span>):
     <span class="pl-k">with</span> <span class="pl-en">open</span>(<span class="pl-s1">input_file_path</span>, <span class="pl-s">'rb'</span>) <span class="pl-k">as</span> <span class="pl-s1">f</span>:
-        <span class="pl-s1">data</span> <span class="pl-c1">=</span> <span class="pl-s1">f</span>.<span class="pl-en">read</span>()
+        <span class="pl-s1">data</span> <span class="pl-c1">=</span> <span class="pl-s1">f</span>.<span class="pl-c1">read</span>()
 
     <span class="pl-c"># 由于RSA加密的局限性，这里假设文件内容不会超过公钥的最大加密尺寸</span>
     <span class="pl-c"># 对于大文件，您应该使用对称加密来加密文件内容，然后只使用RSA加密对称密钥</span>
-    <span class="pl-s1">encrypted_data</span> <span class="pl-c1">=</span> <span class="pl-s1">public_key</span>.<span class="pl-en">encrypt</span>(
+    <span class="pl-s1">encrypted_data</span> <span class="pl-c1">=</span> <span class="pl-s1">public_key</span>.<span class="pl-c1">encrypt</span>(
         <span class="pl-s1">data</span>,
-        <span class="pl-s1">padding</span>.<span class="pl-v">OAEP</span>(
-            <span class="pl-s1">mgf</span><span class="pl-c1">=</span><span class="pl-s1">padding</span>.<span class="pl-v">MGF1</span>(<span class="pl-s1">algorithm</span><span class="pl-c1">=</span><span class="pl-s1">hashes</span>.<span class="pl-v">SHA256</span>()),
-            <span class="pl-s1">algorithm</span><span class="pl-c1">=</span><span class="pl-s1">hashes</span>.<span class="pl-v">SHA256</span>(),
+        <span class="pl-s1">padding</span>.<span class="pl-c1">OAEP</span>(
+            <span class="pl-s1">mgf</span><span class="pl-c1">=</span><span class="pl-s1">padding</span>.<span class="pl-c1">MGF1</span>(<span class="pl-s1">algorithm</span><span class="pl-c1">=</span><span class="pl-s1">hashes</span>.<span class="pl-c1">SHA256</span>()),
+            <span class="pl-s1">algorithm</span><span class="pl-c1">=</span><span class="pl-s1">hashes</span>.<span class="pl-c1">SHA256</span>(),
             <span class="pl-s1">label</span><span class="pl-c1">=</span><span class="pl-c1">None</span>
         )
     )
 
     <span class="pl-k">with</span> <span class="pl-en">open</span>(<span class="pl-s1">output_file_path</span>, <span class="pl-s">'wb'</span>) <span class="pl-k">as</span> <span class="pl-s1">f</span>:
-        <span class="pl-s1">f</span>.<span class="pl-en">write</span>(<span class="pl-s1">encrypted_data</span>)
+        <span class="pl-s1">f</span>.<span class="pl-c1">write</span>(<span class="pl-s1">encrypted_data</span>)
 
 <span class="pl-k">def</span> <span class="pl-en">main</span>():
     <span class="pl-c"># 加载公钥</span>
@@ -488,31 +488,31 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <span class="pl-k">from</span> <span class="pl-s1">cryptography</span>.<span class="pl-s1">hazmat</span>.<span class="pl-s1">backends</span> <span class="pl-k">import</span> <span class="pl-s1">default_backend</span>
 <span class="pl-k">import</span> <span class="pl-s1">os</span>
 
-<span class="pl-k">def</span> <span class="pl-en">load_private_key</span>(<span class="pl-s1">key_path</span>: <span class="pl-s1">str</span>):
+<span class="pl-k">def</span> <span class="pl-en">load_private_key</span>(<span class="pl-s1">key_path</span>: <span class="pl-smi">str</span>):
     <span class="pl-k">with</span> <span class="pl-en">open</span>(<span class="pl-s1">key_path</span>, <span class="pl-s">'rb'</span>) <span class="pl-k">as</span> <span class="pl-s1">key_file</span>:
-        <span class="pl-s1">private_key</span> <span class="pl-c1">=</span> <span class="pl-s1">serialization</span>.<span class="pl-en">load_pem_private_key</span>(
-            <span class="pl-s1">key_file</span>.<span class="pl-en">read</span>(),
+        <span class="pl-s1">private_key</span> <span class="pl-c1">=</span> <span class="pl-s1">serialization</span>.<span class="pl-c1">load_pem_private_key</span>(
+            <span class="pl-s1">key_file</span>.<span class="pl-c1">read</span>(),
             <span class="pl-s1">password</span><span class="pl-c1">=</span><span class="pl-c1">None</span>,  <span class="pl-c"># 如果私钥有密码，请在此处提供</span>
             <span class="pl-s1">backend</span><span class="pl-c1">=</span><span class="pl-en">default_backend</span>()
         )
     <span class="pl-k">return</span> <span class="pl-s1">private_key</span>
 
-<span class="pl-k">def</span> <span class="pl-en">decrypt_file_rsa</span>(<span class="pl-s1">private_key</span>: <span class="pl-s1">rsa</span>.<span class="pl-v">RSAPrivateKey</span>, <span class="pl-s1">input_file_path</span>: <span class="pl-s1">str</span>, <span class="pl-s1">output_file_path</span>: <span class="pl-s1">str</span>):
+<span class="pl-k">def</span> <span class="pl-en">decrypt_file_rsa</span>(<span class="pl-s1">private_key</span>: <span class="pl-s1">rsa</span>.<span class="pl-c1">RSAPrivateKey</span>, <span class="pl-s1">input_file_path</span>: <span class="pl-smi">str</span>, <span class="pl-s1">output_file_path</span>: <span class="pl-smi">str</span>):
     <span class="pl-k">with</span> <span class="pl-en">open</span>(<span class="pl-s1">input_file_path</span>, <span class="pl-s">'rb'</span>) <span class="pl-k">as</span> <span class="pl-s1">f</span>:
-        <span class="pl-s1">encrypted_data</span> <span class="pl-c1">=</span> <span class="pl-s1">f</span>.<span class="pl-en">read</span>()
+        <span class="pl-s1">encrypted_data</span> <span class="pl-c1">=</span> <span class="pl-s1">f</span>.<span class="pl-c1">read</span>()
 
     <span class="pl-c"># 使用RSA私钥解密数据</span>
-    <span class="pl-s1">decrypted_data</span> <span class="pl-c1">=</span> <span class="pl-s1">private_key</span>.<span class="pl-en">decrypt</span>(
+    <span class="pl-s1">decrypted_data</span> <span class="pl-c1">=</span> <span class="pl-s1">private_key</span>.<span class="pl-c1">decrypt</span>(
         <span class="pl-s1">encrypted_data</span>,
-        <span class="pl-s1">padding</span>.<span class="pl-v">OAEP</span>(
-            <span class="pl-s1">mgf</span><span class="pl-c1">=</span><span class="pl-s1">padding</span>.<span class="pl-v">MGF1</span>(<span class="pl-s1">algorithm</span><span class="pl-c1">=</span><span class="pl-s1">hashes</span>.<span class="pl-v">SHA256</span>()),
-            <span class="pl-s1">algorithm</span><span class="pl-c1">=</span><span class="pl-s1">hashes</span>.<span class="pl-v">SHA256</span>(),
+        <span class="pl-s1">padding</span>.<span class="pl-c1">OAEP</span>(
+            <span class="pl-s1">mgf</span><span class="pl-c1">=</span><span class="pl-s1">padding</span>.<span class="pl-c1">MGF1</span>(<span class="pl-s1">algorithm</span><span class="pl-c1">=</span><span class="pl-s1">hashes</span>.<span class="pl-c1">SHA256</span>()),
+            <span class="pl-s1">algorithm</span><span class="pl-c1">=</span><span class="pl-s1">hashes</span>.<span class="pl-c1">SHA256</span>(),
             <span class="pl-s1">label</span><span class="pl-c1">=</span><span class="pl-c1">None</span>
         )
     )
 
     <span class="pl-k">with</span> <span class="pl-en">open</span>(<span class="pl-s1">output_file_path</span>, <span class="pl-s">'wb'</span>) <span class="pl-k">as</span> <span class="pl-s1">f</span>:
-        <span class="pl-s1">f</span>.<span class="pl-en">write</span>(<span class="pl-s1">decrypted_data</span>)
+        <span class="pl-s1">f</span>.<span class="pl-c1">write</span>(<span class="pl-s1">decrypted_data</span>)
 
 <span class="pl-k">def</span> <span class="pl-en">main</span>():
     <span class="pl-c"># 加载私钥</span>
