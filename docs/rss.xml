@@ -1,5 +1,14 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>LOGIC的快乐小窝</title><link>https://Air-ban.github.io</link><description>骑骥一跃不能十步，驽马十驾亦能不舍</description><copyright>LOGIC的快乐小窝</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://images-ave.oss-rg-china-mainland.aliyuncs.com/th.jpg</url><title>avatar</title><link>https://Air-ban.github.io</link></image><lastBuildDate>Fri, 21 Mar 2025 00:46:10 +0000</lastBuildDate><managingEditor>LOGIC的快乐小窝</managingEditor><ttl>60</ttl><webMaster>LOGIC的快乐小窝</webMaster><item><title>数学题审核规范及其流程</title><link>https://Air-ban.github.io/post/shu-xue-ti-shen-he-gui-fan-ji-qi-liu-cheng.html</link><description>## 审核流程及其规范
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>LOGIC的快乐小窝</title><link>https://Air-ban.github.io</link><description>骑骥一跃不能十步，驽马十驾亦能不舍</description><copyright>LOGIC的快乐小窝</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://images-ave.oss-rg-china-mainland.aliyuncs.com/th.jpg</url><title>avatar</title><link>https://Air-ban.github.io</link></image><lastBuildDate>Fri, 21 Mar 2025 01:26:13 +0000</lastBuildDate><managingEditor>LOGIC的快乐小窝</managingEditor><ttl>60</ttl><webMaster>LOGIC的快乐小窝</webMaster><item><title>审核流程及其规范</title><link>https://Air-ban.github.io/post/shen-he-liu-cheng-ji-qi-gui-fan.html</link><description>## 审核流程及其规范
+### 第一步
+在接到一个新包过后，先整体进行浏览，观察是否有漏标/不贴合/合并框，等框体问题，可以通过点击文本块，观察有无外漏来判断，我们的要求是不许有公式框/非公式框在文本块外面；
+
+随后检查是否有出现漏标情况，有的话，直接打标
+
+### 第二步
+在执行完第一步的所有步骤过后，我们需要进行分组的检查，直接点击右边分组栏，点开后，对应部分会进行高亮显示，随后使用方向键，一条一条向下看，看看是否出现漏编组，或者编组错误等问题，在检查编组的同时，你可以进行索引的检查，检查索引是否正确，其中，文本块删除，插图，表格，都不需要编组，需要注意
+
+有的时候你会发现，编组顺序并不是实际的索引顺序，没关系，这样子是不需要打标的，客户只看索引顺序，所以编组顺序无所谓。</description><guid isPermaLink="true">https://Air-ban.github.io/post/shen-he-liu-cheng-ji-qi-gui-fan.html</guid><pubDate>Fri, 21 Mar 2025 01:25:47 +0000</pubDate></item><item><title>数学题审核规范及其流程</title><link>https://Air-ban.github.io/post/shu-xue-ti-shen-he-gui-fan-ji-qi-liu-cheng.html</link><description>## 审核流程及其规范
 ### 第一步
 在接到一个新包过后，先整体进行浏览，观察是否有漏标/不贴合/合并框，等框体问题，可以通过点击文本块，观察有无外漏来判断，我们的要求是不许有公式框/非公式框在文本块外面；
 
