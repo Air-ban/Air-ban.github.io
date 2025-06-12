@@ -1,51 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>溪落</title><link>https://Air-ban.github.io</link><description>骑骥一跃不能十步，驽马十驾亦能不舍</description><copyright>溪落</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://res.xiaoxiaofpu.top/b7efc6f6f369ec0e8eb070a60155c2f7_720.jpg</url><title>avatar</title><link>https://Air-ban.github.io</link></image><lastBuildDate>Thu, 12 Jun 2025 03:42:21 +0000</lastBuildDate><managingEditor>溪落</managingEditor><ttl>60</ttl><webMaster>溪落</webMaster><item><title>龙仔本地部署指南（语言模型）</title><link>https://Air-ban.github.io/post/long-zi-ben-di-bu-shu-zhi-nan-%EF%BC%88-yu-yan-mo-xing-%EF%BC%89.html</link><description>## 前言
-大家对于龙仔在本地部署的呼声非常高，于是乎，我决定写这一篇本地部署的文章，语言模型的部署，无论是在手机上，还是电脑上，都不是特别复杂，只需要有足够的算力即可
-
-## 手机
-如果你想在手机上运行龙仔的模型，请确保你的CPU至少为晓龙8+及以上，运行内存大于等于8GB，好的，让我们开始吧
-### 1. 准备工作
-如果想要在手机上部署，需要有一个部署平台以及推理引擎，这里推荐使用pocketpal AI，如图![](https://res.xiaoxiaofpu.top/Screenshot_2025-06-10-11-58-48-818_com.android.ve.jpg)
-可以直接在Google play商店下载，这里也放出国内可用[下载地址(由cloudflare代理)](https://res.xiaoxiaofpu.top/pocketpal%20AI.apk)
-打开后的界面非常简单
-![main](https://res.xiaoxiaofpu.top/Screenshot_2025-06-10-13-54-38-340_com.pocketpala.jpg)
-好的，现在我们退出软件，下载模型
-
-由于手机上的性能限制，只能跑量化过后的GGUF模型，以下是一些模型版本选择，下载链接由hf-mirror代理，国内可直连
-
-|手机配置| Deepsex-7B  | Deepsex14B  |
-| ---- | ----  | ----  |
-| RAM8G  | [Q8（请长按复制链接到浏览器下载）](https://hf-mirror.com/ValueFX9507/Tifa-DeepsexV2-7b-MGRPO-GGUF-Q8/resolve/main/Tifa-DeepsexV2-7b-NoCot-0325-Q8.gguf?download=true) | [Q4（请长按复制到浏览器下载）](https://hf-mirror.com/ValueFX9507/Tifa-Deepsex-14b-CoT-GGUF-Q4/resolve/main/Tifa-Deepsex-14b-CoT-Q4_K_M.gguf?download=true) |
-| RAM16G  | [F16（请长按复制到浏览器下载）](https://hf-mirror.com/ValueFX9507/Tifa-DeepsexV2-7b-MGRPO-GGUF-F16/resolve/main/Tifa-DeepsexV2-7b-NoCot-0325-F16.gguf?download=true) | [Q8（请长按复制到浏览器下载）](https://hf-mirror.com/ValueFX9507/Tifa-Deepsex-14b-CoT-Q8/resolve/main/Tifa-Deepsex-14b-CoT-Chat-Q8.gguf?download=true) |
-
-
-
-- 7B版本模型使用qwen2.5作为底模训练
-- 14B版本模型使用deepseek-R1作为底模训练(具有思维链)
-- 总结：R1更有逻辑性，更加可以精确理解你的需求，有概率拒绝，qwen则是无条件服从
-
-&gt; [!TIP]
-&gt; 不知道用那个的话，就用7B模型，不会错的
-
-#### 2. 开始导入模型
-首先，打开pocketpal AI软件，点击首页download按钮
-![](https://res.xiaoxiaofpu.top/qq_pic_merged_1749538516698.jpg)
-
-随后点击右下角加号
-![](https://res.xiaoxiaofpu.top/qq_pic_merged_1749538524981.jpg)
-
-选择 Add local model
-![](https://res.xiaoxiaofpu.top/qq_pic_merged_1749538531827.jpg)
-
-在打开的文件资源管理中选择你刚刚下载好的模型
-![](https://res.xiaoxiaofpu.top/qq_pic_merged_1749538540721.jpg)
-
-耐心等待一会即可
-![](https://res.xiaoxiaofpu.top/qq_pic_merged_1749538548569.jpg)
-
-到这里，就已经大功告成啦！你就可以狠狠的调教龙仔了！
-##### 2-1 参数优化
-到了这里，你已经将模型导入成功了，但是呢，现在的龙仔还没有被完全的开发，我们需要合适的提示词，参数，来让他变的符合我们的需求。</description><guid isPermaLink="true">https://Air-ban.github.io/post/long-zi-ben-di-bu-shu-zhi-nan-%EF%BC%88-yu-yan-mo-xing-%EF%BC%89.html</guid><pubDate>Thu, 12 Jun 2025 03:37:36 +0000</pubDate></item><item><title>睡吧</title><link>https://Air-ban.github.io/post/shui-ba.html</link><description># 说在前面&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>溪落</title><link>https://Air-ban.github.io</link><description>骑骥一跃不能十步，驽马十驾亦能不舍</description><copyright>溪落</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://res.xiaoxiaofpu.top/b7efc6f6f369ec0e8eb070a60155c2f7_720.jpg</url><title>avatar</title><link>https://Air-ban.github.io</link></image><lastBuildDate>Thu, 12 Jun 2025 03:44:36 +0000</lastBuildDate><managingEditor>溪落</managingEditor><ttl>60</ttl><webMaster>溪落</webMaster><item><title>睡吧</title><link>https://Air-ban.github.io/post/shui-ba.html</link><description># 说在前面&#13;
 请勿在非医学用途的情况下服用精神类药物&#13;
 ## 0-1&#13;
 艾司唑仑是**苯二氮卓类**的镇静药，我主要拿来治失眠，但是吃了以后会浑身燥热，出冷汗，但是第二天和第三天会睡得很香，但是最近发现了一些非常不寻常的事情...&#13;
